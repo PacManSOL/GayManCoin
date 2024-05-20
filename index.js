@@ -25,7 +25,7 @@ map.forEach((row, i) => {
               x: Boundary.width * j,
               y: Boundary.height * i
             },
-            image: createImage('./img/pipeHorizontal.png')
+            image: createImage('GayManCoin/img/pipeHorizontal.png')
           })
         )
         break
@@ -36,7 +36,7 @@ map.forEach((row, i) => {
               x: Boundary.width * j,
               y: Boundary.height * i
             },
-            image: createImage('./img/pipeVertical.png')
+            image: createImage('GayManCoin/img/pipeVertical.png')
           })
         )
         break
@@ -47,7 +47,7 @@ map.forEach((row, i) => {
               x: Boundary.width * j,
               y: Boundary.height * i
             },
-            image: createImage('./img/pipeCorner1.png')
+            image: createImage('GayManCoin/img/pipeCorner1.png')
           })
         )
         break
@@ -58,7 +58,7 @@ map.forEach((row, i) => {
               x: Boundary.width * j,
               y: Boundary.height * i
             },
-            image: createImage('./img/pipeCorner2.png')
+            image: createImage('GayManCoin/img/pipeCorner2.png')
           })
         )
         break
@@ -69,7 +69,7 @@ map.forEach((row, i) => {
               x: Boundary.width * j,
               y: Boundary.height * i
             },
-            image: createImage('./img/pipeCorner3.png')
+            image: createImage('GayManCoin/img/pipeCorner3.png')
           })
         )
         break
@@ -80,7 +80,7 @@ map.forEach((row, i) => {
               x: Boundary.width * j,
               y: Boundary.height * i
             },
-            image: createImage('./img/pipeCorner4.png')
+            image: createImage('GayManCoin/img/pipeCorner4.png')
           })
         )
         break
@@ -91,7 +91,7 @@ map.forEach((row, i) => {
               x: Boundary.width * j,
               y: Boundary.height * i
             },
-            image: createImage('./img/block.png')
+            image: createImage('GayManCoin/img/block.png')
           })
         )
         break
@@ -113,7 +113,7 @@ map.forEach((row, i) => {
               x: j * Boundary.width,
               y: i * Boundary.height
             },
-            image: createImage('./img/capRight.png')
+            image: createImage('GayManCoin/img/capRight.png')
           })
         )
         break
@@ -124,7 +124,7 @@ map.forEach((row, i) => {
               x: j * Boundary.width,
               y: i * Boundary.height
             },
-            image: createImage('./img/capBottom.png')
+            image: createImage('GayManCoin/img/capBottom.png')
           })
         )
         break
@@ -135,7 +135,7 @@ map.forEach((row, i) => {
               x: j * Boundary.width,
               y: i * Boundary.height
             },
-            image: createImage('./img/capTop.png')
+            image: createImage('GayManCoin/img/capTop.png')
           })
         )
         break
@@ -146,7 +146,7 @@ map.forEach((row, i) => {
               x: j * Boundary.width,
               y: i * Boundary.height
             },
-            image: createImage('./img/pipeCross.png')
+            image: createImage('GayManCoin/img/pipeCross.png')
           })
         )
         break
@@ -158,7 +158,7 @@ map.forEach((row, i) => {
               y: i * Boundary.height
             },
             color: 'blue',
-            image: createImage('./img/pipeConnectorTop.png')
+            image: createImage('GayManCoin/img/pipeConnectorTop.png')
           })
         )
         break
@@ -170,7 +170,7 @@ map.forEach((row, i) => {
               y: i * Boundary.height
             },
             color: 'blue',
-            image: createImage('./img/pipeConnectorRight.png')
+            image: createImage('GayManCoin/img/pipeConnectorRight.png')
           })
         )
         break
@@ -182,7 +182,7 @@ map.forEach((row, i) => {
               y: i * Boundary.height
             },
             color: 'blue',
-            image: createImage('./img/pipeConnectorBottom.png')
+            image: createImage('GayManCoin/img/pipeConnectorBottom.png')
           })
         )
         break
@@ -193,7 +193,7 @@ map.forEach((row, i) => {
               x: j * Boundary.width,
               y: i * Boundary.height
             },
-            image: createImage('./img/pipeConnectorLeft.png')
+            image: createImage('GayManCoin/img/pipeConnectorLeft.png')
           })
         )
         break
