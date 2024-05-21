@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gay-Man</title>
-    <style>
-      #gameContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        position: relative;
-      }
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gay-Man</title>
+<style>
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Dodajemy flex-direction: column, aby elementy były ułożone jeden pod drugim */
+    position: relative;
+    height: 100vh; /* Zmieniamy na 100vh, aby kontener wypełnił całą wysokość widoku */
+}
 
-      #gameCanvas {
-        box-shadow: 10px 10px 20px black;
-      }
+#gameCanvas {
+    box-shadow: 10px 10px 20px black;
+    margin-bottom: 20px; /* Dodajemy margines na dole, aby oddzielić grę od logów */
+}
 
-      #leftLogo, #rightLogo {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
+#logosContainer {
+    display: flex; /* Ustawiamy kontener dla logów jako flexbox */
+    justify-content: center; /* Centrujemy loga w poziomie */
+    gap: 20px; /* Dodajemy odstęp między logami */
+}
 
-      #leftLogo {
-        left: 20px;
-      }
+#leftLogo img,
+#rightLogo img {
+    width: 100px; /* Dostosuj rozmiar, jeśli jest potrzebny */
+    height: auto;
+}
 
-      #rightLogo {
-        right: 20px;
-      }
+h1 {
+    text-align: center;
+    font-family: Impact, sans-serif;
+    color: lightgrey;
+}
 
-      #leftLogo img, #rightLogo img {
-        width: 100px; /* Adjust the size as needed */
-        height: auto;
-      }
-
-      h1 {
-        text-align: center;
-        font-family: Impact, sans-serif;
-        color: lightgrey;
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80vh;
-        margin: 0;
-        background: linear-gradient(
-          to right,
-          red, orange, yellow, green, blue, indigo, violet
-        );
-      }
-    </style>
-  </head>
-  <body>
-    <div id="gameContainer">
-      <a id="leftLogo" href="https://x.com/GayManCoin" target="_blank">
-        <img src="images/Logo1.png" alt="Twitter Logo" />
-      </a>
-      <div>
-        <h1>Gay-Man</h1>
-        <canvas id="gameCanvas"></canvas>
-      </div>
-      <a id="rightLogo" href="https://t.me/gaymancoin" target="_blank">
-        <img src="images/Logo2.png" alt="Telegram Logo" />
-      </a>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Zmieniamy na 100vh, aby tło wypełniło całą wysokość widoku */
+    margin: 0;
+    background: linear-gradient(
+        to right,
+        red, orange, yellow, green, blue, indigo, violet
+    );
+}
+</style>
+</head>
+<body>
+<div id="gameContainer">
+    <h1>Gay-Man</h1>
+    <canvas id="gameCanvas"></canvas>
+    <div id="logosContainer"> <!-- Tworzymy kontener dla logów -->
+        <a id="leftLogo" href="https://x.com/GayManCoin" target="_blank">
+            <img src="images/Logo1.png" alt="Twitter Logo" />
+        </a>
+        <a id="rightLogo" href="https://t.me/gaymancoin" target="_blank">
+            <img src="images/Logo2.png" alt="Telegram Logo" />
+        </a>
     </div>
-    <script src="src/Game.js" type="module"></script>
-  </body>
+</div>
+<script src="src/Game.js" type="module"></script>
+</body>
 </html>
