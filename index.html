@@ -10,14 +10,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Dodajemy flex-direction: column, aby elementy były ułożone jeden pod drugim */
+    flex-direction: column; /* Ustawiamy kierunek układu elementów na kolumnowy */
     position: relative;
-    height: 100vh; /* Zmieniamy na 100vh, aby kontener wypełnił całą wysokość widoku */
+    height: 100vh; /* Kontener zajmuje całą wysokość widoku */
 }
 
 #gameCanvas {
     box-shadow: 10px 10px 20px black;
-    margin-bottom: 20px; /* Dodajemy margines na dole, aby oddzielić grę od logów */
+    margin-bottom: 20px; /* Margines na dole, aby oddzielić grę od logów */
 }
 
 #logosContainer {
@@ -28,21 +28,19 @@
 
 #leftLogo img,
 #rightLogo img {
-    width: 100px; /* Dostosuj rozmiar, jeśli jest potrzebny */
+    width: 100px; /* Dostosuj rozmiar logów */
     height: auto;
 }
 
-h1 {
-    text-align: center;
-    font-family: Impact, sans-serif;
-    color: lightgrey;
+#titleImage {
+    margin-bottom: 20px; /* Margines na dole, aby oddzielić tytuł od gry */
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Zmieniamy na 100vh, aby tło wypełniło całą wysokość widoku */
+    height: 100vh; /* Tło wypełnia całą wysokość widoku */
     margin: 0;
     background: linear-gradient(
         to right,
@@ -53,9 +51,9 @@ body {
 </head>
 <body>
 <div id="gameContainer">
-    <h1>Gay-Man</h1>
+    <img id="titleImage" src="images/title.png" alt="Title Image" />
     <canvas id="gameCanvas"></canvas>
-    <div id="logosContainer"> <!-- Tworzymy kontener dla logów -->
+    <div id="logosContainer"> <!-- Kontener dla logów -->
         <a id="leftLogo" href="https://x.com/GayManCoin" target="_blank">
             <img src="images/Logo1.png" alt="Twitter Logo" />
         </a>
